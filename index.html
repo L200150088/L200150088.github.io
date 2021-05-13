@@ -11,7 +11,9 @@
 
 	<section id="particles-js">
 		<div class="text">
-			<h2>Khofa Prayogo Beserta Keluarga Mengucapkan<br><span>Minal'Aidin wal-Faizin<br><span>Mohon Maaf Lahir & Batin <div id="text">
+			<h2>Khofa Prayogo Beserta Keluarga Mengucapkan<br><span>Minal'Aidin wal-Faizin<br><span<div id="text2">
+
+    </div> <div id="text">
 
     </div></span></h2>
 		</div>
@@ -32,6 +34,20 @@
   function ketik() {
     if(i<text.length){
       document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(ketik,80);
+    }
+  }
+  ketik();
+</script>
+
+<script>
+  var i=0,text2;
+  text = "Mohon Maaf Lahir & Batin"
+
+  function ketik() {
+    if(i<text2.length){
+      document.getElementById("text").innerHTML += text2.charAt(i);
       i++;
       setTimeout(ketik,80);
     }

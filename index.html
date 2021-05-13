@@ -42,13 +42,13 @@
 </script>
 
 <script>
-  var i=0,text2;
+  var u=0,text2;
   text2 = "Mohon Maaf Lahir & Batin"
 
   function ketik2() {
-    if(i<text2.length){
+    if(u<text2.length){
       document.getElementById("text2").innerHTML += text2.charAt(i);
-      i++;
+      u++;
       setTimeout(ketik2,80);
     }
   }

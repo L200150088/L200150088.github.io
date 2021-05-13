@@ -11,9 +11,7 @@
 
 	<section id="particles-js">
 		<div class="text">
-			<h2>Khofa Prayogo Beserta Keluarga Mengucapkan<br><span>Minal'Aidin wal-Faizin<br><span><div id="text2">
-
-    </div> <div id="text">
+			<h2>Khofa Prayogo Beserta Keluarga Mengucapkan<br><span>Minal'Aidin wal-Faizin<br><span>Mohon Maaf Lahir & Batin <div id="text">
 
     </div></span></h2>
 		</div>
@@ -31,6 +29,9 @@
   var i=0,text;
   text = "Selamat Hari Raya Idul Fitri 1442 Hijriyah"
 
+  var u=0,text2;
+  text2 = "Mohon Maaf Lahir & Batin"
+
   function ketik() {
     if(i<text.length){
       document.getElementById("text").innerHTML += text.charAt(i);
@@ -38,21 +39,16 @@
       setTimeout(ketik,80);
     }
   }
-  ketik();
-</script>
 
-<script>
-  var u=0,text2;
-  text2 = "Mohon Maaf Lahir & Batin"
-
-  function ketik2() {
-    if(u<text2.length){
-      document.getElementById("text2").innerHTML += text2.charAt(u);
+   function ketik2() {
+    if(u<text.length){
+      document.getElementById("text2").innerHTML += text.charAt(u);
       u++;
-      setTimeout(ketik2,80);
+      setTimeout(ketik,80);
     }
   }
   ketik();
 </script>
+
 </body>
 </html>

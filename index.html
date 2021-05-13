@@ -39,11 +39,12 @@
 				document.getElementById("text").innerHTML += text.charAt(i);
 				i++;
 				setTimeout(ketik,80);
-				if(u<text2.length){
-					document.getElementById("text2").innerHTML += text.charAt(u);
-					u++;
-					setTimeout(ketik,80);
-				}
+				
+			}
+			if(u<text2.length){
+				document.getElementById("text2").innerHTML += text.charAt(u);
+				u++;
+				setTimeout(ketik,80);
 			}
 		}
 		ketik();

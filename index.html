@@ -29,6 +29,7 @@
 
 	<script>
   var i=0,text;
+  var u=0,text2;
   text = "Selamat Hari Raya Idul Fitri 1442 Hijriyah"
   text2 = "Mohon Maaf Lahir & Batin"
 
@@ -37,8 +38,8 @@
     if(i<text.length){
       document.getElementById("text").innerHTML += text.charAt(i);
       i++;
-      document.getElementById("text2").innerHTML += text.charAt(i);
-      i++;
+      document.getElementById("text2").innerHTML += text.charAt(u);
+      u++;
       setTimeout(ketik,80);
     }
   }

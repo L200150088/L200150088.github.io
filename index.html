@@ -11,14 +11,14 @@
 
 	<section id="particles-js">
 		<div class="text">
-			<h2>Khofa Prayogo Beserta Keluarga Mengucapkan<br><span>Minal'Aidin wal-Faizin<br><span><div id="text2">
+			<h2>Khofa Prayogo Beserta Keluarga Mengucapkan<br><span>...<br></span><div id="text2">
 
-			</div> <div id="text">
+    </div> <div id="text">
 
-			</div></span></h2>
+    </div></h2>
 		</div>
 
-
+ 
 		<div class="masjid"></div>
 
 
@@ -28,39 +28,32 @@
 	
 
 	<script>
-		var i=0,text;
-		var u=0,text2;
-		text = "Selamat Hari Raya Idul Fitri 1442 Hijriyah"
-		text2 = "Mohon Maaf Lahir & Batin"
+  var i=0,text;
+  text = "Selamat Hari Raya Idul Fitri 1442 Hijriyah"
 
 
-		function ketik() {
-			if(i<text.length){
-				document.getElementById("text").innerHTML += text.charAt(i);
-				i++;
-				setTimeout(ketik,80);
-				
-			}
-			if(u<text2.length){
-				document.getElementById("text2").innerHTML += text.charAt(u);
-				u++;
-				setTimeout(ketik,80);
-			}
-		}
-		ketik();
+  function ketik() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(ketik,80);
+    }
+  }
+  
 
-// var u=0,text2;
-//   text2 = "Mohon Maaf Lahir & Batin"
+var u=0,text2;
+  text2 = "Mohon Maaf Lahir & Batin"
 
-//    function ketik2() {
-//     if(u<text.length){
-//       document.getElementById("text2").innerHTML += text.charAt(u);
-//       u++;
-//       setTimeout(ketik2,80);
-//     }
-//   }
-
-//   ketik2();
+   function ketik2() {
+    if(u<text2.length){
+      document.getElementById("text2").innerHTML += text2.charAt(u);
+      u++;
+      setTimeout(ketik2,150);
+    }
+  }
+  
+  ketik2();
+  ketik();
 </script>
 
 </body>

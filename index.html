@@ -30,29 +30,32 @@
 	<script>
   var i=0,text;
   text = "Selamat Hari Raya Idul Fitri 1442 Hijriyah"
+  text2 = "Mohon Maaf Lahir & Batin"
 
 
   function ketik() {
     if(i<text.length){
       document.getElementById("text").innerHTML += text.charAt(i);
       i++;
+      document.getElementById("text2").innerHTML += text.charAt(i);
+      i++;
       setTimeout(ketik,80);
     }
   }
   ketik();
 
-var u=0,text2;
-  text2 = "Mohon Maaf Lahir & Batin"
+// var u=0,text2;
+//   text2 = "Mohon Maaf Lahir & Batin"
+
+//    function ketik2() {
+//     if(u<text.length){
+//       document.getElementById("text2").innerHTML += text.charAt(u);
+//       u++;
+//       setTimeout(ketik2,80);
+//     }
+//   }
   
-   function ketik2() {
-    if(u<text.length){
-      document.getElementById("text2").innerHTML += text.charAt(u);
-      u++;
-      setTimeout(ketik2,80);
-    }
-  }
-  
-  ketik2();
+//   ketik2();
 </script>
 
 </body>
